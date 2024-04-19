@@ -160,6 +160,7 @@
     <element xsi:type="archimate:CompositionRelationship" id="id-5c0fbc8802884415bc68d2371c725f16" source="id-f4e829593c3b4fa88b2c756f5fd42567" target="id-7103bb58f68c4f19be211bc9ef892841"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ad2759281d1343079f5b095e1287219e" source="id-ca51c8ecc24249e98b387724d50325a1" target="id-aee76ca26a304f4684c343d9cbc5135d"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ee28043f92a94d8dbacdcba571a57314" source="id-fea8019132cc4cc9b790fab7e5556c95" target="id-edc36be97578479793640dc0280ad626"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-62ed98699a72491caf63e7fa25b97c44" source="id-edc36be97578479793640dc0280ad626" target="id-d8d6cc7c6f87434cbde5a136a059cfd3"/>
   </folder>
   <folder name="Views" id="id-7ccbfb1d672c4ca8b0d41a573a1bb8e3" type="diagrams">
     <folder name="Propostas de Valor" id="id-7c4fd9d0982244cdb01125f6b4ef3d88">
@@ -333,7 +334,7 @@
             </child>
           </element>
           <element xsi:type="archimate:ArchimateDiagramModel" name="Desenvolver Softwares Customizados" id="id-089cc6c403614610b880158d2f986945" viewpoint="layered">
-            <child xsi:type="archimate:DiagramObject" id="id-c54485d89c9f42bf86bdb8711e2fd9ef" targetConnections="id-a1eddcecdffe4ce0aa94289a502ca99e id-8b4cbb6bf0324f878e096715a4740e56" textPosition="1" archimateElement="id-d8d6cc7c6f87434cbde5a136a059cfd3">
+            <child xsi:type="archimate:DiagramObject" id="id-c54485d89c9f42bf86bdb8711e2fd9ef" targetConnections="id-a1eddcecdffe4ce0aa94289a502ca99e id-8b4cbb6bf0324f878e096715a4740e56 id-af9ac18558874d4797ea7fa1a323c60d" textPosition="1" archimateElement="id-d8d6cc7c6f87434cbde5a136a059cfd3">
               <bounds x="504" y="48" width="203" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-5ed9eb7dbf0049a2ab1dd0a25157bc06" source="id-c54485d89c9f42bf86bdb8711e2fd9ef" target="id-d5dfbc5ddaaf465597ceca7862eaa80d" archimateRelationship="id-eb064daa402743b0bcb44720d5fbded9"/>
             </child>
@@ -349,10 +350,11 @@
               <sourceConnection xsi:type="archimate:Connection" id="id-8b4cbb6bf0324f878e096715a4740e56" source="id-bedec021541b4c2fb8fcaedc6d421cae" target="id-c54485d89c9f42bf86bdb8711e2fd9ef" archimateRelationship="id-b1c93fac84374e189b3b29d24f8e1578"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-225f38e05902446da2b5c9485401fafb" textPosition="1" archimateElement="id-6f5151ad90c54b57ab23fbdb496645ef">
-              <bounds x="468" y="300" width="120" height="55"/>
+              <bounds x="132" y="252" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-3a63301a7edb42e995213b1f1983dff4" archimateElement="id-edc36be97578479793640dc0280ad626">
               <bounds x="228" y="168" width="204" height="55"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-af9ac18558874d4797ea7fa1a323c60d" source="id-3a63301a7edb42e995213b1f1983dff4" target="id-c54485d89c9f42bf86bdb8711e2fd9ef" archimateRelationship="id-62ed98699a72491caf63e7fa25b97c44"/>
             </child>
           </element>
         </folder>
@@ -422,7 +424,7 @@
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-3f2a980789f94405857b110d0a8a8c31"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Business Capabilities Map" id="id-e4aaa6cea30c471d903fc293a5fc8152">
-      <child xsi:type="archimate:Group" id="id-03a251a72fd7425b81672a803eef5987" name="Core" textAlignment="1">
+      <child xsi:type="archimate:Group" id="id-03a251a72fd7425b81672a803eef5987" name="Capacidades de Produtos e Serviços Customizados por Região" textAlignment="1">
         <bounds x="60" y="180" width="985" height="745"/>
         <child xsi:type="archimate:DiagramObject" id="id-e4a3668f8a6c43c6927579130d16362f" archimateElement="id-fea8019132cc4cc9b790fab7e5556c95">
           <bounds x="36" y="84" width="433" height="288"/>
