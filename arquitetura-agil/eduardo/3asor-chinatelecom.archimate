@@ -13,7 +13,7 @@
       <element xsi:type="archimate:Capability" name="Gerenciamento do Relacionamento com o Cliente" id="id-4d41c7a8334a4925befa07980b865c6e"/>
       <element xsi:type="archimate:Capability" name="Gestão de Marketing" id="id-c9a09eefe3554bdbacd7f5a0967f8fb8"/>
       <element xsi:type="archimate:Capability" name="Integração e Gerenciamento de Serviços" id="id-fea8019132cc4cc9b790fab7e5556c95"/>
-      <element xsi:type="archimate:Capability" name="Processamento de Eventos em Tempo Real" id="id-f1a11e61afa14352ad4ccd516a7a5bf5"/>
+      <element xsi:type="archimate:Capability" name="Captura de Eventos em Tempo Real" id="id-f1a11e61afa14352ad4ccd516a7a5bf5"/>
       <element xsi:type="archimate:Capability" name="Processamento de Grandes Volumes de Dados" id="id-bf314d7091cd4808b134b04a3b05c837"/>
       <element xsi:type="archimate:Capability" name="Desenvolvimento de Softwares Customizados" id="id-9f8e3876eb174a7b888a8ac62ae3e377"/>
       <element xsi:type="archimate:Capability" name="Gerenciamento de Requisitos" id="id-edc36be97578479793640dc0280ad626"/>
@@ -40,7 +40,7 @@
       <element xsi:type="archimate:BusinessProcess" name="Coletar e Processar Dados para Análise" id="id-1dabb841993f43469c6bca1e94c7f87f"/>
       <element xsi:type="archimate:BusinessProcess" name="Disponibilizar Dados para Análise" id="id-9e460ba130ed4c96955d21c0c64c1d42"/>
       <element xsi:type="archimate:BusinessProcess" name="Identificar Tendências de Mercado" id="id-f30565e464154cbf8e727a31dbce709e"/>
-      <element xsi:type="archimate:BusinessProcess" name="Processar Dados de Eventos" id="id-601e504ee2be4b48a2d7cb1759135bb7"/>
+      <element xsi:type="archimate:BusinessProcess" name="Processar Dados de Eventos em Tempo Real" id="id-601e504ee2be4b48a2d7cb1759135bb7"/>
       <element xsi:type="archimate:BusinessProcess" name="Realizar Benchmark com Concorrentes" id="id-fec48229492d49bcb8120ec4f560bf29"/>
       <element xsi:type="archimate:BusinessProcess" name="Submeter Dados de Eventos para Coleta" id="id-dd57a27d7b47460e8f5c9bf78fff4722"/>
     </folder>
@@ -250,7 +250,7 @@
               <bounds x="768" y="168" width="205" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-82c378cbc22347449a200ab1b08542a8" archimateElement="id-9964a39804884562855f618f2c3ed681">
-              <bounds x="48" y="468" width="1092" height="276"/>
+              <bounds x="125" y="468" width="1092" height="276"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-a69f0e9240834a0fb0000a78788558c3" source="id-82c378cbc22347449a200ab1b08542a8" target="id-11406f3b2aa342d186e382ae845898cb" archimateRelationship="id-033a8c0e10174dd3aa11905d7c70fc41"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-43a60b67889d4e16a7413fe6e6b921cd" source="id-82c378cbc22347449a200ab1b08542a8" target="id-8aad205623c6476cb485644ec9674548" archimateRelationship="id-c877338917e24ca0bc61bc11f5f5fcc9"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-05f69672b3564e69b789c607ee49ea75" source="id-82c378cbc22347449a200ab1b08542a8" target="id-61ebdd85383f4794b4ffbc0b8b951daf" archimateRelationship="id-f0a1e771d0064b30adf3651983e79f39"/>
