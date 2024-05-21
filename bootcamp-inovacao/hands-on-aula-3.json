@@ -1,0 +1,239 @@
+[
+    {
+        "id": "39516879550b7a82",
+        "type": "tab",
+        "label": "Bootcamp em Arquitetura e Inovação",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8e6c863e0540eec2",
+        "type": "inject",
+        "z": "39516879550b7a82",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "b99129f55d5241ec"
+            ]
+        ]
+    },
+    {
+        "id": "746b6cc597ed85e3",
+        "type": "debug",
+        "z": "39516879550b7a82",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b99129f55d5241ec",
+        "type": "change",
+        "z": "39516879550b7a82",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "World",
+                "fromt": "str",
+                "to": "Edu",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "746b6cc597ed85e3"
+            ]
+        ]
+    },
+    {
+        "id": "07e031505c74ff12",
+        "type": "ui_button",
+        "z": "39516879550b7a82",
+        "name": "",
+        "group": "85f1558aacb42ec0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "LIGAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "fef3aed41120eb90"
+            ]
+        ]
+    },
+    {
+        "id": "5ff7d737d072ce6b",
+        "type": "ui_button",
+        "z": "39516879550b7a82",
+        "name": "",
+        "group": "85f1558aacb42ec0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DESLIGAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 400,
+        "wires": [
+            [
+                "fef3aed41120eb90"
+            ]
+        ]
+    },
+    {
+        "id": "a80a38c7668cc09f",
+        "type": "ui_text",
+        "z": "39516879550b7a82",
+        "group": "9b6e84e2573055ee",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 690,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f5690c065c0f770d",
+        "type": "ui_audio",
+        "z": "39516879550b7a82",
+        "name": "",
+        "group": "9b6e84e2573055ee",
+        "voice": "Grandpa (português (Brasil))",
+        "always": "",
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fef3aed41120eb90",
+        "type": "change",
+        "z": "39516879550b7a82",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "str",
+                "to": "Luz desligada",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "str",
+                "to": "Luz ligada",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "a80a38c7668cc09f",
+                "f5690c065c0f770d"
+            ]
+        ]
+    },
+    {
+        "id": "85f1558aacb42ec0",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "faf18c226f807c9d",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "9b6e84e2573055ee",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "faf18c226f807c9d",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "faf18c226f807c9d",
+        "type": "ui_tab",
+        "name": "CASA",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
