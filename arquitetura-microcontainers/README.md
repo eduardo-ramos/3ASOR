@@ -13,13 +13,14 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
 
 ## Estrutura do Repositório
 
-- **mysql-deployment.yaml**: Configuração de deployment para o MySQL.
-- **mysql-pvc.yaml**: Configuração de Persistent Volume Claim (PVC) para o MySQL.
-- **mysql-service.yaml**: Configuração de serviço para o MySQL.
-- **wordpress-deployment.yaml**: Configuração de deployment para o WordPress.
-- **wordpress-ingress.yaml**: Configuração de ingress para o WordPress.
-- **wordpress-pvc.yaml**: Configuração de Persistent Volume Claim (PVC) para o WordPress.
-- **wordpress-service.yaml**: Configuração de serviço para o WordPress.
+- **ubuntu-k3s-lab**: Pasta contendo os arquivos de configuração do cluster Kubernetes.
+- **ubuntu-k3s-lab/mysql-deployment.yaml**: Configuração de deployment para o MySQL.
+- **ubuntu-k3s-lab/mysql-pvc.yaml**: Configuração de Persistent Volume Claim (PVC) para o MySQL.
+- **ubuntu-k3s-lab/mysql-service.yaml**: Configuração de serviço para o MySQL.
+- **ubuntu-k3s-lab/wordpress-deployment.yaml**: Configuração de deployment para o WordPress.
+- **ubuntu-k3s-lab/wordpress-ingress.yaml**: Configuração de ingress para o WordPress.
+- **ubuntu-k3s-lab/wordpress-pvc.yaml**: Configuração de Persistent Volume Claim (PVC) para o WordPress.
+- **ubuntu-k3s-lab/wordpress-service.yaml**: Configuração de serviço para o WordPress.
 
 ## Como Utilizar
 
