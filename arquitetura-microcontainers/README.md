@@ -34,13 +34,13 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
     ```
 3. Aplique os arquivos de configuração no seu cluster Kubernetes:
     ```bash
-    kubectl apply -f mysql-deployment.yaml
-    kubectl apply -f mysql-pvc.yaml
-    kubectl apply -f mysql-service.yaml
-    kubectl apply -f wordpress-deployment.yaml
-    kubectl apply -f wordpress-ingress.yaml
-    kubectl apply -f wordpress-pvc.yaml
-    kubectl apply -f wordpress-service.yaml
+    kubectl apply -f ubuntu-k3s-lab/mysql-deployment.yaml
+    kubectl apply -f ubuntu-k3s-lab/mysql-pvc.yaml
+    kubectl apply -f ubuntu-k3s-lab/mysql-service.yaml
+    kubectl apply -f ubuntu-k3s-lab/wordpress-deployment.yaml
+    kubectl apply -f ubuntu-k3s-lab/wordpress-ingress.yaml
+    kubectl apply -f ubuntu-k3s-lab/wordpress-pvc.yaml
+    kubectl apply -f ubuntu-k3s-lab/wordpress-service.yaml
     ```
 
 ## Licença
